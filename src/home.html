@@ -6,6 +6,7 @@
     <link rel="icon" href="../images/icon/naruto.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../dist/aos.css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="animation.js"></script>
 </head>
@@ -20,7 +21,6 @@
                 <li class="active"> <a href="home.html">Home</a></li>
                 <li> <a href="stories.html">Stories</a></li>
                 <li> <a href="characters.html">Characters</a></li>
-                <li> <a href="products.html">Products</a></li>
                 <li> <a href="about.html">About</a></li>
                 <li> <a href="contact.html">Contact</a></li>
             </ul>
@@ -38,50 +38,40 @@
             <span class="badge" onclick="currentDiv(3)"></span>
         </div>
     </div>
-    <div class="content">
-        <h3>Welcome to the World of Naruto!</h3>
+    <div class="content" id="content-home">
+        <h1 align="center">Welcome to the World of Naruto!</h1>
         <p>this is paragraph</p>
-        <div class="boxes">
-            <ul>
-                <li class="box">
-                    <a href="stories.html">
-                        <div>
-                            <h4>Stories</h4>
-                            <div class="h_line"></div>
-                            <p>Introduce</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="box">
-                    <a href="products.html">
-                        <div>
-                            <h4>Products</h4>
-                            <div class="h_line"></div>
-                            <p>Introduce</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="box">
-                    <a href="characters.html">
-                        <div>
-                            <h4>Characters</h4>
-                            <div class="h_line"></div>
-                            <p>Introduce</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="box">
-                    <a href="about.html">
-                        <div>
-                            <h4>About</h4>
-                            <div class="h_line"></div>
-                            <p>Introduce</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+        <div class="aos-item aos-for-home" data-aos="fade-down">
+            <a href="stories.html">
+                <div class="column" id="c1">
+                    <h1>Stories</h1>
+                </div>
+            </a>
+        </div>
+        <div class="aos-item aos-for-home" data-aos="fade-down">
+            <a href="characters.html">
+                <div class="column" id="c2">
+                    <h1>Characters</h1>
+                </div>
+            </a>
+        </div>
+        <div class="aos-item aos-for-home" data-aos="fade-down">
+            <a href="contact.html">
+                <div class="column" id="c3">
+                    <h1>Contact</h1>
+                </div>
+            </a>
         </div>
     </div>
+    <footer>
+        <p>&copy; Steven 2017</p>
+    </footer>
+    <script src="../dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
 </body>
 
 </html>
