@@ -315,3 +315,9 @@ footer {
     text-shadow: 2px 2px 2px red;
     color: black;
 }
+
+input, textarea {
+    background-color: #E6E6E6;
+    border: 2px solid red;
+    padding: 5px;
+}
